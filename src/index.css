@@ -9,5 +9,5 @@
 
 .backgroundImage {
   background-image: url("/src/assets/background.jpg ");
-  @apply absolute -z-10 blur-sm h-[1200px];
+  @apply absolute -z-50 blur-sm;
 }

@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <div>
+      <div className="fixed w-full h-[80px] flex jus items-center px-4 bg-transparent text-gray-600">
         <Link to="/">
           <img
             src={logo}
