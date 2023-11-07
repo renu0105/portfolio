@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/logo.pngg.png";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [navbar, setnavbar] = useState(false);
@@ -28,23 +28,23 @@ function Navbar() {
         </Link>
 
         <ul className=" hidden md:flex absolute top-2 right-2 m-2 ">
-          <li className="nav">
-            <Link to="/" element="Home">
+          <li className="nav cursor-pointer">
+            <Link to="/" smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li className="nav">
-            <Link to="/about" element="about">
+          <li className="nav cursor-pointer">
+            <Link to="about" smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li className="nav">
-            <Link to="/contact" element="contact">
+          <li className="nav cursor-pointer">
+            <Link to="contact" smooth={true} duration={500}>
               Contact
             </Link>
           </li>
-          <li className="nav">
-            <Link to="/skills" element="skills">
+          <li className="nav cursor-pointer">
+            <Link to="skills" smooth={true} duration={500}>
               Skills
             </Link>
           </li>
@@ -67,22 +67,22 @@ function Navbar() {
       >
         <ul>
           <li className="py-6 text-4xl">
-            <Link to="/" element="Home">
+            <Link to="/" smooth={true} duration={500}>
               Home
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link to="/about" element="about">
+            <Link to="/about" smooth={true} duration={500}>
               About
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link to="/contact" element="contact">
+            <Link to="/contact" smooth={true} duration={500}>
               Contact
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link to="/skills" element="skills">
+            <Link to="/skills" smooth={true} duration={500}>
               Skills
             </Link>
           </li>
